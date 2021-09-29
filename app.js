@@ -2,14 +2,14 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", (req, res) =>
+app.get("/alumnos", (req, res) =>
   res.send([
-    { nombreAlumno: "Magdiel", numeroAlumno: "1" },
-    { nombreAlumno: "Ezbai", numeroAlumno: "2" },
-    { nombreAlumno: "Pedro", numeroAlumno: "3" },
-    { nombreAlumno: "Manuel", numeroAlumno: "4" },
-    { nombreAlumno: "Anastacia", numeroAlumno: "5" },
-    { nombreAlumno: "Elizabet", numeroAlumno: "6" },
+    { student: "Magdiel", studentId: "1" },
+    { student: "Ezbai", studentId: "2" },
+    { student: "Pedro", studentId: "3" },
+    { student: "Manuel", studentId: "4" },
+    { student: "Anastacia", studentId: "5" },
+    { student: "Elizabet", studentId: "6" },
   ])
 );
 
