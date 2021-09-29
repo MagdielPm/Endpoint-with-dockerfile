@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 
 const app = express();
 
@@ -13,6 +13,4 @@ app.get("/alumnos", (req, res) =>
   ])
 );
 
-app.listen(3000, () => {
-  console.log("Done!");
-});
+export default app;
