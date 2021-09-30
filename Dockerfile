@@ -1,6 +1,6 @@
 FROM node:14
-WORKDIR /src/server
-COPY package.json ./src/server
+WORKDIR /usr/src/app
+COPY . .
 RUN npm install 
-COPY . /app
+EXPOSE 9000
 CMD ["npm", "start"]
